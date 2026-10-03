@@ -62,15 +62,3 @@ INSERT INTO reserva
 (data_reserva, hora_inicio, hora_fim, id_labs, id_turma, id_professor)
 VALUES
 ('2026-09-25', '21:10:00', '22:45:00', 1, 1, 1);
-
-UPDATE labs
-SET status_lab = 'reservado'
-WHERE cd_labs = 1;
-
-UPDATE labs
-SET status_lab = 'liberado'
-WHERE cd_labs = 1;
-
-SELECT *
-FROM labs
-WHERE status_lab = 'liberado';
